@@ -164,6 +164,10 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'assignments.tasks.fetch_and_save_data',
         'schedule': crontab(minute="*/1"),
     },
+    'update_currency_data': {
+        'task': 'assignments.tasks.update_currency_data',
+        'schedule': crontab(hour="*/24"),
+    },
 }
 
 AUTH_USER_MODEL = 'users.User'
