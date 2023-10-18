@@ -1,0 +1,13 @@
+django
+
+djangorestframework
+markdown
+django-filter
+
+celery[redis]
+
+psycopg2-binary
+pyjwt
+django-cors-headers
+djangorestframework-simplejwt
+requests
